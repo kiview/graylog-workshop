@@ -41,7 +41,7 @@ Configure the Docker Log Driver
 
 Next we want to configure the container of the Spring-Boot app to use the Docker GELF log driver (use UDP, since we already configured the input).
 
-Look at the [officla docs](https://docs.docker.com/config/containers/logging/gelf/) to find out how to do it.
+Look at the [official docs](https://docs.docker.com/config/containers/logging/gelf/) to find out how to do it.
 
 Docker-Compose also provides support for configuring the log driver: https://docs.docker.com/compose/compose-file/compose-file-v2/#logging
 
@@ -63,3 +63,8 @@ Create some Dashboards
 --------------------------
 
 Create some useful Graylog dashboards for displaying the count of the different log levels (i.e. WARN, INFO...).
+
+Update the Graylog installation to a more up-to-date release
+-------------------------------------------------------------
+
+Checkout the recent Graylog version in the [Docker Hub](https://hub.docker.com/r/graylog/graylog), check the official docs and try to update the images used for the Graylog installation.
